@@ -1,0 +1,6 @@
+node_modules/
+.DS_Store
+*.log
+
+# Internal design boards + AI concept images — never publish these.
+boards/

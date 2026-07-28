@@ -1,0 +1,11 @@
+{
+  "name": "heightcast",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Heightcast — honest adult-height estimator. Static, zero-dependency, no build step.",
+  "scripts": {
+    "test": "node --test",
+    "serve": "python3 -m http.server 8080"
+  }
+}
