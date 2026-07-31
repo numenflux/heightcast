@@ -5,133 +5,204 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Heightcast — Honest Adult-Height Estimate</title>
 <meta name="description" content="A science-based estimate of your adult height, shown as an honest range — using the Khamis-Roche method, your parents' heights, and CDC growth curves. No supplements, no 'grow taller' promises.">
-<meta name="color-scheme" content="light dark">
+<meta name="color-scheme" content="light">
 <meta name="theme-color" content="#FAF6EE">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Heightcast">
 <meta property="og:title" content="How tall will you be? Honestly.">
 <meta property="og:description" content="A science-based estimate of your adult height, shown as an honest range — Khamis-Roche, mid-parental, and CDC growth curves. Free, private, no 'grow taller' nonsense.">
 <meta name="twitter:card" content="summary">
-<link rel="stylesheet" href="css/styles.css?v=20260728b">
-<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='8'%20fill='%23FAF6EE'/%3E%3Cpath%20d='M16%207l7%2013H9z'%20fill='%23C7502B'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/styles.css?v=20260728e">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='7'%20fill='%23FAF6EE'/%3E%3Cpath%20d='M9%2015l7-7%207%207'%20fill='none'%20stroke='%23191D2B'%20stroke-width='3'%20stroke-linecap='round'%20stroke-linejoin='round'/%3E%3Cpath%20d='M8%2023h16'%20stroke='%23C2472A'%20stroke-width='3'%20stroke-linecap='round'/%3E%3C/svg%3E">
 </head>
 <body>
+<div class="sheet">
 
 <header class="site-header">
   <div class="wrap">
     <a class="brand" href="./">
-      <span class="mark" aria-hidden="true">
-        <svg viewBox="0 0 24 24"><path d="M12 3l8 15H4z" fill="#0A0D18"/></svg>
-      </span>
-      Heightcast <small>&nbsp;honest estimates</small>
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M6 11.6 12 5.6l6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        <path class="rule-line" d="M4.4 18.4h15.2" stroke-width="2.4" stroke-linecap="round"/>
+      </svg>
+      <span class="wm">Heightcast</span>
+      <small>honest estimates</small>
     </a>
-    <span class="tag-pill">Free</span>
+    <span class="head-note">Free · nothing collected</span>
   </div>
 </header>
 
 <main>
   <!-- ============================ HERO ============================ -->
   <section class="hero wrap">
-    <span class="kicker">
-      <svg width="13" height="13" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 15H4z" fill="currentColor"/></svg>
-      Real science, honest ranges
-    </span>
-    <h1>How tall will<br>you be? <span class="grad">Honestly.</span></h1>
-    <p class="lede">Most height calculators fake a single confident number. Real science gives a <b>range</b> — so that's what we show you, built from three published methods.</p>
-    <div class="trust">
-      <span><b>Khamis‑Roche</b> method</span>
-      <span><b>CDC</b> growth curves</span>
-      <span><b>No</b> supplements. Ever.</span>
+    <h1>How tall<br><span class="ask">will you be?</span><br><span class="soft">Honestly.</span></h1>
+    <p class="lede">Most height calculators hand you one confident number. Real science can't give you one — so this gives you the <b>range</b> that three published methods actually agree on.</p>
+
+    <!-- THE signature drawing: the top of a doorframe, marked in pencil.
+         It shows the honest-range idea instead of claiming it. -->
+    <figure class="figure">
+      <svg viewBox="58 98 284 405" role="img" aria-label="Illustration: the upper part of a doorframe, graduated in feet and inches, marked in pencil at age 8, age 11 and now — with a hatched band near the top showing the estimated adult range and a dashed 'most likely' line through it.">
+        <defs>
+          <pattern id="hc-hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+            <line class="dw-hatch" x1="0" y1="0" x2="0" y2="7"/>
+          </pattern>
+        </defs>
+
+        <!-- the estimated adult range: hatched, because it is genuinely uncertain -->
+        <text class="dw-label-ink" x="100" y="122">the honest range</text>
+        <rect x="92" y="132.5" width="230" height="50" fill="url(#hc-hatch)"/>
+        <path class="dw-edge" d="M92 132.5h230M92 182.5h230"/>
+        <path class="dw-mid"  d="M92 157.5h230"/>
+        <text class="dw-label-acc" x="320" y="152" text-anchor="end">most likely</text>
+
+        <!-- printed graduations: inches, half-feet, feet -->
+        <g class="dw-grad"><path d="M92 457.5h6M92 445h6M92 432.5h6M92 420h6M92 407.5h6M92 382.5h6M92 370h6M92 357.5h6M92 345h6M92 332.5h6M92 307.5h6M92 295h6M92 282.5h6M92 270h6M92 257.5h6M92 232.5h6M92 220h6M92 207.5h6M92 195h6M92 182.5h6M92 157.5h6M92 145h6M92 132.5h6M92 120h6"/></g>
+        <g class="dw-grad dw-grad-half"><path d="M92 395h12M92 245h12"/></g>
+        <g class="dw-grad dw-grad-foot"><path d="M92 470h22M92 320h22M92 170h22"/></g>
+        <text class="dw-num" x="84" y="474" text-anchor="end">4′</text>
+        <text class="dw-num" x="84" y="324" text-anchor="end">5′</text>
+        <text class="dw-num" x="84" y="174" text-anchor="end">6′</text>
+
+        <!-- the post you mark, cut off at the bottom the way a drawing is -->
+        <path class="dw-post" d="M92 104V484"/>
+        <path class="dw-break" d="M84 490l16-6M84 498l16-6"/>
+
+        <!-- still growing: from the last mark up into the range -->
+        <path class="dw-journey" d="M140 245V192"/>
+        <path class="dw-journey-head" d="M133 199l7-8 7 8"/>
+
+        <!-- pencil marks already made: the past -->
+        <g transform="rotate(-0.5 92 400)">
+          <path class="dw-mark"     d="M92 445h74"/>
+          <text class="dw-label" x="174" y="449.5">age 8</text>
+          <path class="dw-mark"     d="M92 345h96"/>
+          <text class="dw-label" x="196" y="349.5">age 11</text>
+          <path class="dw-mark-now" d="M92 257.5h124"/>
+          <text class="dw-label-ink" x="224" y="262">now</text>
+        </g>
+      </svg>
+      <figcaption class="figcap"><i>Illustration.</i> Every honest forecast has a top and a bottom. Heightcast draws you both — and the line through the middle where you'll most likely land.</figcaption>
+    </figure>
+
+    <div class="credits">
+      <div><b>Khamis&#8209;Roche prediction</b> <span>Pediatrics, 1994</span></div>
+      <div><b>Mid&#8209;parental target height</b> <span>Tanner</span></div>
+      <div><b>Percentile projection</b> <span>CDC 2000 curves</span></div>
+      <div><b>Collected about you</b> <span>nothing</span></div>
+      <div><b>Requests made after this page loads</b> <span>none</span></div>
     </div>
   </section>
 
   <!-- ============================ FORM ============================ -->
-  <section class="wrap">
-    <form class="card predict" id="form" novalidate>
-      <div class="field">
-        <label>Sex <span class="m-sub">(growth curves differ)</span></label>
-        <div class="seg full" role="group" aria-label="Sex" id="sexSeg">
-          <button type="button" data-sex="male" aria-pressed="true">Male</button>
-          <button type="button" data-sex="female" aria-pressed="false">Female</button>
+  <section class="wrap chapter" data-mark="01">
+    <div class="sec-head">
+      <h2>Five numbers.<br><span class="soft">Nothing else.</span></h2>
+      <p>No name, no email, no account. The five numbers below are used once, here, and never leave this tab.</p>
+    </div>
+
+    <div class="sec-body">
+    <form class="panel predict" id="form" novalidate>
+      <div class="panel-head">
+        <span class="ph-t">Measurement sheet</span>
+        <span class="ph-n">5 fields · 0 sent</span>
+      </div>
+
+      <div class="group">
+        <div class="gh"><span class="gn">01</span><span class="gt">About you</span></div>
+        <div class="field">
+          <label>Sex <span class="m-sub">— growth curves differ</span></label>
+          <div class="seg full" role="group" aria-label="Sex" id="sexSeg">
+            <button type="button" data-sex="male" aria-pressed="true">Male</button>
+            <button type="button" data-sex="female" aria-pressed="false">Female</button>
+          </div>
+        </div>
+        <div class="field">
+          <label for="age">Your age <span class="m-sub">— 4 to 17</span></label>
+          <div class="suffix">
+            <input id="age" type="number" inputmode="numeric" min="4" max="17" step="1" placeholder="14">
+            <span class="u">years</span>
+          </div>
+          <div class="err" id="err-ageYears"></div>
         </div>
       </div>
 
-      <div class="unit-row field">
-        <label style="margin:0">Units</label>
-        <div class="seg" role="group" aria-label="Units" id="unitSeg">
-          <button type="button" data-unit="imperial" aria-pressed="true">ft / in · lb</button>
-          <button type="button" data-unit="metric" aria-pressed="false">cm · kg</button>
+      <div class="group">
+        <div class="gh"><span class="gn">02</span><span class="gt">You, right now</span></div>
+        <div class="unit-row field">
+          <label style="margin:0">Units</label>
+          <div class="seg" role="group" aria-label="Units" id="unitSeg">
+            <button type="button" data-unit="imperial" aria-pressed="true">ft / in · lb</button>
+            <button type="button" data-unit="metric" aria-pressed="false">cm · kg</button>
+          </div>
+        </div>
+        <div class="row2">
+          <div class="field">
+            <label for="height">Your height</label>
+            <div class="suffix">
+              <input id="height" type="number" inputmode="decimal" step="0.1" placeholder="65">
+              <span class="u" data-u="len">in</span>
+            </div>
+            <div class="err" id="err-height"></div>
+          </div>
+          <div class="field">
+            <label for="weight">Your weight</label>
+            <div class="suffix">
+              <input id="weight" type="number" inputmode="decimal" step="0.1" placeholder="120">
+              <span class="u" data-u="wt">lb</span>
+            </div>
+            <div class="err" id="err-weight"></div>
+          </div>
         </div>
       </div>
 
-      <div class="field">
-        <label for="age">Your age <span class="m-sub">(4–17)</span></label>
-        <div class="suffix">
-          <input id="age" type="number" inputmode="numeric" min="4" max="17" step="1" placeholder="14">
-          <span class="u">years</span>
-        </div>
-        <div class="err" id="err-ageYears"></div>
-      </div>
-
-      <div class="row2">
-        <div class="field">
-          <label for="height">Your height</label>
-          <div class="suffix">
-            <input id="height" type="number" inputmode="decimal" step="0.1" placeholder="65">
-            <span class="u" data-u="len">in</span>
+      <div class="group">
+        <div class="gh"><span class="gn">03</span><span class="gt">Your parents</span><span class="gs">best guess is fine</span></div>
+        <div class="row2">
+          <div class="field">
+            <label for="mother">Mother's height</label>
+            <div class="suffix">
+              <input id="mother" type="number" inputmode="decimal" step="0.1" placeholder="64">
+              <span class="u" data-u="len">in</span>
+            </div>
+            <div class="err" id="err-motherHeight"></div>
           </div>
-          <div class="err" id="err-height"></div>
-        </div>
-        <div class="field">
-          <label for="weight">Your weight</label>
-          <div class="suffix">
-            <input id="weight" type="number" inputmode="decimal" step="0.1" placeholder="120">
-            <span class="u" data-u="wt">lb</span>
+          <div class="field">
+            <label for="father">Father's height</label>
+            <div class="suffix">
+              <input id="father" type="number" inputmode="decimal" step="0.1" placeholder="70">
+              <span class="u" data-u="len">in</span>
+            </div>
+            <div class="err" id="err-fatherHeight"></div>
           </div>
-          <div class="err" id="err-weight"></div>
-        </div>
-      </div>
-
-      <div class="row2">
-        <div class="field">
-          <label for="mother">Mother's height</label>
-          <div class="suffix">
-            <input id="mother" type="number" inputmode="decimal" step="0.1" placeholder="64">
-            <span class="u" data-u="len">in</span>
-          </div>
-          <div class="err" id="err-motherHeight"></div>
-        </div>
-        <div class="field">
-          <label for="father">Father's height</label>
-          <div class="suffix">
-            <input id="father" type="number" inputmode="decimal" step="0.1" placeholder="70">
-            <span class="u" data-u="len">in</span>
-          </div>
-          <div class="err" id="err-fatherHeight"></div>
         </div>
       </div>
 
       <button class="btn" type="submit">Estimate my adult height</button>
-      <p class="m-sub" style="text-align:center;margin:.7rem 0 0;color:var(--faint);font-size:.76rem">
-        Nothing is uploaded — every number is worked out on your own device.
-      </p>
+      <p class="form-foot">Worked out on your own device. Nothing is uploaded.</p>
     </form>
+    </div>
   </section>
 
   <!-- ============================ RESULT ============================ -->
-  <section class="wrap" id="result" hidden aria-live="polite">
-    <div class="card">
-      <div class="result-head">
-        <div class="result-eyebrow" id="resContext">Your estimated adult height</div>
-        <div class="range-big" id="resRange">—</div>
-        <div class="range-most">most likely around <b id="resPoint">—</b></div>
-      </div>
+  <section class="wrap chapter" id="result" data-mark="02" hidden aria-live="polite">
+    <div class="sec-head">
+      <h2>The estimate,<br><span class="soft">with its edges.</span></h2>
+      <p>A top, a bottom, and the line through the middle. Every published method that went into it is shown underneath, so you can see them disagree.</p>
+    </div>
+
+    <div class="sec-body">
+    <div class="panel result-panel">
+      <p class="result-eyebrow" id="resContext">Your estimated adult height</p>
+      <div class="range-big" id="resRange">—</div>
+      <p class="range-most">most likely around <b id="resPoint">—</b></p>
 
       <div class="scale">
         <div class="track"><div class="band" id="scaleBand"></div><div class="pt" id="scalePt"></div></div>
         <div class="ends"><span id="scaleLo"></span><span id="scaleHi"></span></div>
+        <p class="scale-note">The hatched length is the part nobody can pin down — including us.</p>
       </div>
 
+      <p class="methods-label">What each published method says on its own</p>
       <div class="methods" id="methods"></div>
 
       <div class="disclaimer">
@@ -141,35 +212,62 @@
 
       <div class="warnings" id="warnings"></div>
       <p class="confidence" id="confidence"></p>
+
+      <!-- the honesty of this tool, pressed into the sheet rather than claimed -->
+      <div class="stamp" aria-hidden="true"><b>Estimate</b><i>not a measurement</i></div>
     </div>
 
-    <!-- shareable poster card (canvas -> PNG) -->
+    <!-- shareable poster card (canvas -> PNG, drawn on this device) -->
     <div class="poster-wrap">
-      <p class="section-label">Your shareable card</p>
-      <canvas id="posterCanvas" width="1080" height="1350" role="img" aria-label="Shareable Heightcast result card"></canvas>
-      <div class="poster-actions">
-        <button class="btn small" id="downloadBtn" type="button">Download PNG</button>
+      <p class="poster-lead">A printable card of the same result — drawn here on your device, saved straight to it.</p>
+      <div class="poster-stage">
+        <canvas id="posterCanvas" width="1080" height="1350" role="img" aria-label="Shareable Heightcast result card"></canvas>
       </div>
+      <div class="poster-actions">
+        <button class="btn small secondary" id="downloadBtn" type="button">Download the card</button>
+        <span class="poster-serial" id="posterSerial"></span>
+      </div>
+    </div>
     </div>
   </section>
 
   <!-- ============================ EDUCATION ============================ -->
-  <section class="wrap">
-    <div class="card edu">
-      <p class="section-label">What actually determines your height</p>
-      <ul>
-        <li><b>Genetics — about 80%.</b> Most of your adult height is set by the DNA you inherited. Twin and family studies put the heritability of height around <span class="pct">0.8</span>. That's why parents' heights are the single biggest input here. <span class="m-sub">(Silventoinen et al., twin studies; Yengo et al., <i>Nature</i> 2022.)</span></li>
-        <li><b>Nutrition &amp; overall health during your growing years.</b> Long-run, balanced nutrition is what lets you reach your genetic potential — not any single food or pill. Chronic under-nutrition or illness can lower final height.</li>
-        <li><b>Sleep during puberty.</b> Most growth hormone is released during deep sleep, so consistently good sleep while you're still growing supports normal growth.</li>
-        <li><b>Growth plates close after puberty.</b> Height comes from growth plates at the ends of your bones. Once they fuse — typically by around 14–16 in girls and 16–18 in boys — you've reached your adult height and it doesn't increase. <span class="m-sub">(General pediatric endocrinology.)</span></li>
-      </ul>
+  <section class="wrap chapter" data-mark="03">
+    <div class="sec-head">
+      <h2>What actually sets<br><span class="soft">your height.</span></h2>
+    </div>
+
+    <div class="sec-body">
+    <div class="pullstat">
+      <div class="big">80%</div>
+      <p>of your adult height is already decided by the DNA you inherited — which is why your parents' heights are the heaviest input on this page.</p>
+      <p class="cite">Twin and family studies put the heritability of height near 0.8. Silventoinen et al.; Yengo et al., <i>Nature</i> 2022.</p>
+    </div>
+
+    <ul class="factors">
+      <li>
+        <b>Nutrition and general health, over years</b>
+        <p>Long-run, balanced eating is what lets you reach the potential you already have — not any single food or pill. Chronic under-nutrition or illness can lower final height.</p>
+      </li>
+      <li>
+        <b>Sleep during puberty</b>
+        <p>Most growth hormone is released during deep sleep, so consistently good sleep while you're still growing supports normal growth.</p>
+      </li>
+      <li>
+        <b>Growth plates close, and that's that</b>
+        <p>Height comes from growth plates at the ends of your bones. Once they fuse — typically around 14–16 in girls and 16–18 in boys — you've reached your adult height and it doesn't increase. <span class="m-sub">(General pediatric endocrinology.)</span></p>
+      </li>
+    </ul>
     </div>
   </section>
 
   <!-- ============================ FAQ ============================ -->
-  <section class="wrap">
-    <div class="card faq">
-      <p class="section-label">Honest FAQ</p>
+  <section class="wrap chapter" data-mark="04">
+    <div class="sec-head">
+      <h2>The honest<br><span class="soft">answers.</span></h2>
+    </div>
+    <div class="sec-body">
+    <div class="faq">
       <details open>
         <summary>Can I increase my adult height?</summary>
         <p>Truthfully: once your growth plates have closed, no — no stretch, supplement, or routine adds permanent height. What you <i>can</i> change is how tall you look: standing up straight, core and back strength, and good posture can add a centimetre or two of <i>apparent</i> height. That's appearance, not bone.</p>
@@ -180,7 +278,7 @@
       </details>
       <details>
         <summary>How accurate is this estimate?</summary>
-        <p>The Khamis‑Roche method is accurate to within about ±5 cm (±2 in) for most people, roughly 9 times out of 10. It's more accurate the closer you are to your adult height. We show a range on purpose — a single number would be pretending.</p>
+        <p>The Khamis&#8209;Roche method is accurate to within about ±5 cm (±2 in) for most people, roughly 9 times out of 10. It's more accurate the closer you are to your adult height. We show a range on purpose — a single number would be pretending.</p>
       </details>
       <details>
         <summary>What if I don't know a parent's height?</summary>
@@ -188,34 +286,37 @@
       </details>
       <details>
         <summary>Why do you need my weight?</summary>
-        <p>The Khamis‑Roche regression uses current weight as one of its inputs (it slightly adjusts the prediction). It never leaves your phone, and we don't judge it — it's just a variable in a 1994 equation.</p>
+        <p>The Khamis&#8209;Roche regression uses current weight as one of its inputs (it slightly adjusts the prediction). It never leaves your phone, and we don't judge it — it's just a variable in a 1994 equation.</p>
       </details>
+    </div>
     </div>
   </section>
 
   <!-- ====================== WHERE YOUR NUMBERS GO ====================== -->
-  <section class="wrap" id="privacy">
-    <div class="card nodata">
-      <h2>Your numbers stay<br><span class="quiet">on your device.</span></h2>
+  <section class="wrap chapter nodata" id="privacy" data-mark="05">
+    <div class="sec-head">
+      <h2>Your numbers stay<br><span class="soft">on your device.</span></h2>
       <p class="nodata-lede">Heightcast is a page and some maths — nothing more. When you press estimate, the calculation happens inside your own browser, the way a calculator works with the wifi off.</p>
+    </div>
 
-      <!-- three pencil marks on a doorframe: the ruler rail, laid flat -->
-      <ol class="flow" aria-label="What happens to the numbers you type">
-        <li><span class="t" aria-hidden="true"></span><div><b>You type them.</b><i>They sit in the page, in your device's own memory.</i></div></li>
-        <li><span class="t" aria-hidden="true"></span><div><b>Your browser does the maths.</b><i>Khamis‑Roche, mid‑parental and the CDC curves all run right here.</i></div></li>
-        <li><span class="t" aria-hidden="true"></span><div><b>You close the tab.</b><i>They're gone. Nothing was written down, here or anywhere.</i></div></li>
-      </ol>
-      <p class="flow-note">There is no fourth step.</p>
+    <div class="sec-body">
+    <!-- three pencil marks on a doorframe: the rail, laid flat -->
+    <ol class="flow" aria-label="What happens to the numbers you type">
+      <li><span class="t" aria-hidden="true"></span><div><b>You type them.</b><i>They sit in the page, in your device's own memory.</i></div></li>
+      <li><span class="t" aria-hidden="true"></span><div><b>Your browser does the maths.</b><i>Khamis&#8209;Roche, mid&#8209;parental and the CDC curves all run right here.</i></div></li>
+      <li><span class="t" aria-hidden="true"></span><div><b>You close the tab.</b><i>They're gone. Nothing was written down, here or anywhere.</i></div></li>
+    </ol>
+    <p class="flow-note">There is no fourth step.</p>
 
-      <ul class="nolist">
-        <li>No account and no sign‑up — there's nothing to sign up to.</li>
-        <li>No email box, no newsletter, no waitlist.</li>
-        <li>No cookies, no analytics, no trackers, no ads.</li>
-        <li>No database — every file here is a plain, unchanging page.</li>
-        <li>The shareable card is drawn on your device and saved there.</li>
-      </ul>
+    <ul class="nolist">
+      <li>No account and no sign&#8209;up — there's nothing to sign up to.</li>
+      <li>No email box, no newsletter, no waitlist.</li>
+      <li>No cookies, no analytics, no trackers, no ads.</li>
+      <li>No database — every file here is a plain, unchanging page.</li>
+      <li>The shareable card is drawn on your device and saved there.</li>
+    </ul>
 
-      <p class="nodata-out">The long version is on the <a href="privacy.html">privacy page</a>, and what this estimate is <i>not</i> is on the <a href="terms.html">terms &amp; disclaimer page</a>. Both are short.</p>
+    <p class="nodata-out">The long version is on the <a href="privacy.html">privacy page</a>, and what this estimate is <i>not</i> is on the <a href="terms.html">terms &amp; disclaimer page</a>. Both are short.</p>
     </div>
   </section>
 </main>
@@ -226,16 +327,31 @@
     <a href="privacy.html">Privacy</a>
     <a href="terms.html">Terms &amp; disclaimer</a>
   </nav>
-  <p><b style="color:var(--muted)">Heightcast</b> — an honest height estimate. Free, and the maths runs entirely in your browser.</p>
+  <div class="foot-mark">
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M6 11.6 12 5.6l6 6" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path class="rule-line" d="M4.4 18.4h15.2" stroke-width="2.6" stroke-linecap="round"/>
+    </svg>
+    <b>Heightcast</b>
+  </div>
+  <p>An honest height estimate. Free, and the maths runs entirely in your browser.</p>
+
+  <!-- a properly made sheet carries its own control patch -->
+  <div class="colophon">
+    <span class="patch" aria-hidden="true"><i style="background:#FFFDF8"></i><i style="background:#EFE6D4"></i><i style="background:#C6B79D"></i><i style="background:#8E846F"></i><i style="background:#4C5165"></i><i style="background:#191D2B"></i><i style="background:#C2472A"></i></span>
+    <span>Warm paper · ink navy · one coral. Set in Bricolage Grotesque.</span>
+  </div>
+
   <p class="cites">
     Methods &amp; sources:
     Khamis HJ, Roche AF. <i>Pediatrics</i> 1994;94:504–507 (errata 1995;95:457) ·
-    Tanner target height (mid‑parental) ·
-    CDC 2000 stature‑for‑age growth charts.
+    Tanner target height (mid&#8209;parental) ·
+    CDC 2000 stature&#8209;for&#8209;age growth charts.
   </p>
   <p>Estimate only. Not medical advice. Nothing you type is uploaded, stored or shared: there is no account, no tracking, and no server ever receives your measurements.</p>
 </footer>
 
-<script type="module" src="js/app.js?v=20260728b"></script>
+</div><!-- /.sheet -->
+<script type="module" src="js/app.js?v=20260728e"></script>
 </body>
 </html>
