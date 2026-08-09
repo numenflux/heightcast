@@ -21,7 +21,7 @@ COPPA/UK-AADC-safe design is one where no personal data is collected at all.
 - **`privacy.html`** — the zero-collection privacy note, plain enough for a 14-year-old.
 - **`terms.html`** — terms and the honest disclaimer (estimate not measurement, not medical
   advice, no guarantee, nothing makes you taller).
-- 41 unit tests over the pure math modules: `npm test` (node's built-in runner, no deps).
+- 150 tests over the pure math modules: `npm test` (node's built-in runner, no deps).
 
 ## Deliberately absent
 
@@ -38,15 +38,18 @@ COPPA/UK-AADC-safe design is one where no personal data is collected at all.
 
 - **The Heightcast app itself** (growth tracked over time) does not exist, and the site no
   longer mentions or promises it.
-- **GitHub Pages is not enabled** on this repo, so there is no public URL yet.
-- ⚠️ **`boards/` is untracked but still in git history** (commits `7bfdd22`/`2ea7e63`). It names
-  internal AI tooling and cost. The repo is private today; **before it is ever made public,
-  either keep it private or rewrite history** — untracking alone does not remove it.
+
+## Publishing status
+
+Live on GitHub Pages at https://numenflux.github.io/heightcast/ (repo `numenflux/heightcast`,
+public, Pages serving `main` at `/`). History was rewritten to two clean commits before
+publishing; `boards/` (internal design boards + AI concept images) is gitignored and appears
+nowhere in the published history — verified against the public tree.
 
 ## Local development
 
 ```sh
-npm test        # 41 unit tests, node --test, zero dependencies
+npm test        # 150 tests, node --test, zero dependencies
 npm run serve   # python3 -m http.server 8080
 ```
 
